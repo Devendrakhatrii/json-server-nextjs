@@ -1,0 +1,112 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "category": "Programming",
+      "price": 29.99,
+      "stock": 10,
+      "description": "A guide to writing clean, readable, and maintainable code."
+    },
+    {
+      "title": "The Pragmatic Programmer Binod",
+      "author": "Andrew Hunt",
+      "category": "Programming",
+      "price": 34.99,
+      "stock": 5,
+      "description": "Tips and techniques for software developers to improve their craft.",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "category": "Productivity",
+      "price": 24.5,
+      "stock": 8,
+      "description": "Rules for focused success in a distracted world."
+    },
+    {
+      "id": "5",
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert T. Kiyosaki",
+      "category": "Finance",
+      "price": 15,
+      "stock": 20,
+      "description": "Lessons about money and investing from two different father figures."
+    },
+    {
+      "id": "6",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "category": "Fiction",
+      "price": 18,
+      "stock": 12,
+      "description": "A magical story about following your dreams and listening to your heart."
+    },
+    {
+      "id": "7",
+      "title": "You Don't Know JS Yet",
+      "author": "Kyle Simpson",
+      "category": "Programming",
+      "price": 22.99,
+      "stock": 7,
+      "description": "A deep dive into JavaScript core concepts and inner workings."
+    },
+    {
+      "id": "8",
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "category": "History",
+      "price": 26.5,
+      "stock": 9,
+      "description": "A brief history of humankind from evolution to modern society."
+    },
+    {
+      "id": "9",
+      "title": "Start With Why",
+      "author": "Simon Sinek",
+      "category": "Leadership",
+      "price": 21.75,
+      "stock": 11,
+      "description": "How great leaders inspire everyone to take action by focusing on the 'why'."
+    },
+    {
+      "id": "10",
+      "title": "Rework",
+      "author": "Jason Fried",
+      "category": "Business",
+      "price": 23,
+      "stock": 6,
+      "description": "Unconventional advice on starting and running a business efficiently."
+    },
+    {
+      "id": "20",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "category": "Self-help",
+      "price": 19.99,
+      "stock": 15,
+      "description": "An easy & proven way to build good habits and break bad ones."
+    },
+    {
+      "id": "fbcd",
+      "title": "Qui iusto voluptas l",
+      "author": "Accusantium est tene",
+      "category": "Facere ut recusandae",
+      "price": 31,
+      "stock": 14,
+      "description": "A dignissimos praese"
+    },
+    {
+      "id": "3384",
+      "title": "Ramesh",
+      "author": "Irure consectetur co",
+      "category": "Est culpa sunt incid",
+      "price": 870,
+      "stock": 100,
+      "description": "Esse a quo aliquid "
+    }
+  ]
+}
