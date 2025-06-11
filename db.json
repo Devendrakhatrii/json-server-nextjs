@@ -1,33 +1,6 @@
 {
   "books": [
     {
-      "id": "1",
-      "title": "Clean Code",
-      "author": "Robert C. Martin",
-      "category": "Programming",
-      "price": 29.99,
-      "stock": 10,
-      "description": "A guide to writing clean, readable, and maintainable code."
-    },
-    {
-      "title": "The Pragmatic Programmer Binod",
-      "author": "Andrew Hunt",
-      "category": "Programming",
-      "price": 34.99,
-      "stock": 5,
-      "description": "Tips and techniques for software developers to improve their craft.",
-      "id": "3"
-    },
-    {
-      "id": "4",
-      "title": "Deep Work",
-      "author": "Cal Newport",
-      "category": "Productivity",
-      "price": 24.5,
-      "stock": 8,
-      "description": "Rules for focused success in a distracted world."
-    },
-    {
       "id": "5",
       "title": "Rich Dad Poor Dad",
       "author": "Robert T. Kiyosaki",
@@ -55,13 +28,13 @@
       "description": "A deep dive into JavaScript core concepts and inner workings."
     },
     {
-      "id": "8",
-      "title": "Sapiens",
+      "title": "Sapien",
       "author": "Yuval Noah Harari",
       "category": "History",
       "price": 26.5,
       "stock": 9,
-      "description": "A brief history of humankind from evolution to modern society."
+      "description": "A brief history of humankind from evolution to modern society.",
+      "id": "8"
     },
     {
       "id": "9",

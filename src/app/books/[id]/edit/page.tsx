@@ -11,7 +11,7 @@ const EditBookPage = () => {
   const { data, loading } = useFetch<Book>(`/books/${params.id}`);
 
   if (loading) return <div>Loading...</div>;
-  if (!data) return <div>Book not found</div>;
+  if (!data) return <div >Book not found</div>;
 
   const handleSubmit = async (formData: BookFormData) => {
     await updateBook(data.id, formData);
@@ -21,8 +21,8 @@ const EditBookPage = () => {
 
   return (
     <div className="max-w-2xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-6">Edit Book</h1>
       <BookForm
+        name="Edit Book"
         initialData={data}
         onSubmit={handleSubmit}
         submitLabel="Update Book"

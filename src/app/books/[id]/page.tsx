@@ -4,12 +4,29 @@ import useFetch from "@/hooks/useFetch";
 import { deleteBook } from "@/services/bookService";
 import { Book } from "@/types/book";
 import Link from "next/link";
-import { notFound, useParams } from "next/navigation";
+import { notFound, useParams, useRouter } from "next/navigation";
 import React from "react";
 
 const BookDetailPage = () => {
   const params = useParams();
+  const router = useRouter();
   const { data, loading } = useFetch<Book>(`/books/${params.id}`);
+
+  const handleDelete = async (id: string) => {
+    try {
+      const confirmed = window.confirm(
+        "Are you sure you want to delete this book?"
+      );
+      if (!confirmed) return;
+
+      await deleteBook(id);
+      router.push("/books");
+      router.refresh();
+    } catch (error) {
+      console.error("Error deleting book:", error);
+      alert("Failed to delete book. Please try again.");
+    }
+  };
 
   if (loading) return <div>Loading...</div>;
 
@@ -35,7 +52,7 @@ const BookDetailPage = () => {
           <Link href={`/books/${data.id}/edit`}>
             <Button>Edit</Button>
           </Link>
-          <Button variant="danger" onClick={() => deleteBook(data.id)}>
+          <Button variant="danger" onClick={() => handleDelete(data.id)}>
             Delete
           </Button>
         </div>

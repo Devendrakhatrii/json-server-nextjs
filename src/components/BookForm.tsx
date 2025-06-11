@@ -5,12 +5,13 @@ import Button from "@/components/Button";
 import { Book, BookFormData } from "@/types/book";
 
 interface BookFormProps {
+  name: string;
   initialData?: Book;
   onSubmit: (data: BookFormData) => Promise<void>;
   submitLabel: string;
 }
 
-const BookForm = ({ initialData, onSubmit, submitLabel }: BookFormProps) => {
+const BookForm = ({ name, initialData, onSubmit, submitLabel }: BookFormProps) => {
   const router = useRouter();
   const [formData, setFormData] = useState<BookFormData>({
     title: initialData?.title || "",
@@ -42,7 +43,7 @@ const BookForm = ({ initialData, onSubmit, submitLabel }: BookFormProps) => {
 
   return (
     <div className="max-w-2xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-6">Add New Book</h1>
+      <h1 className="text-2xl font-bold mb-6">{name}</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block mb-1">Title</label>
@@ -122,7 +123,7 @@ const BookForm = ({ initialData, onSubmit, submitLabel }: BookFormProps) => {
           <Button
             type="button"
             variant="secondary"
-            onClick={() => router.back()}
+            onClick={() => router.push("/books")}
           >
             Cancel
           </Button>
